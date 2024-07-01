@@ -33,7 +33,7 @@ export default function Home() {
 	const highlightedName = (name: string, element: string) => {
 		return name
 			.toLowerCase()
-			.replace(element, `<span class="bg-secondary">${element}</span>`);
+			.replace(element, `<span class="bg-secondary capitalize">${element}</span>`);
 	};
 
 	const handleBreakify = () => {
@@ -54,7 +54,7 @@ export default function Home() {
 
 	return (
 		<div className="home-container flex flex-col items-center justify-center min-h-screen bg-black px-4">
-			<div className="title capitalize font-bold text-center mb-8 space-y-4">
+			<div className="title font-bold text-center mb-8 space-y-4">
 				<h1
 					className="text-4xl sm:text-5xl md:text-6xl text-white"
 					dangerouslySetInnerHTML={{
